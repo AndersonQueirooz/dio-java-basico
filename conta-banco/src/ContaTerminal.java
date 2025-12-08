@@ -1,23 +1,23 @@
 public class ContaTerminal {
 
-    int numeroConta;
+    int numero;
     String agencia;
     String nomeCliente;
     double saldo;
 
     public void numeroConta(int numeroConta) {
-        this.numeroConta = numeroConta;
+        numero = numeroConta;
     }
 
-    public void agencia(String agencia) {
-        this.agencia = agencia;
+    public void agencia(String numeroAgencia) {
+        agencia = numeroAgencia;
     }
 
-    public void nomeCliente(String nomeCliente) {
-        this.nomeCliente = nomeCliente;
+    public void nomeCliente(String nomeDoCliente) {
+        nomeCliente = nomeDoCliente;
     }
-    public void saldo(double saldo) {
-        this.saldo = saldo;
+    public void saldo(double saldoInicial) {
+        saldo = saldoInicial;
     }
 
 
