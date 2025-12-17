@@ -3,7 +3,35 @@ import java.util.concurrent.ThreadLocalRandom;
 public class ProcessoSeletivo {
     public static void main(String[] args) throws Exception {
 
-        imprimirSelecionados();
+        entrandoEmContato();
+    }
+    
+    static void entrandoEmContato() { // Método que simula o contato com os candidatos
+        String[] candidatos = { "Ana", "Bia", "Carlos", "Daniel", "Rafaela" }; // Array com os nomes dos candidatos
+        for (int i = 0; i < candidatos.length; i++) {
+            int tentativas = 1;
+            boolean continuarTentando = true;
+            boolean atendeu = false;
+            do {
+                atendeu = atender();
+                continuarTentando = !atendeu;
+                if (continuarTentando) {
+                    tentativas++;
+                } else {
+                    System.out.println(
+                            "Contato realizado com o candidato " + candidatos[i] + " na tentativa " + tentativas);
+                }
+            } while (continuarTentando && tentativas <= 3);
+            if (atendeu) {
+                System.out.println("Candidato " + candidatos[i] + " selecionado.");
+            } else {
+                System.out.println("Não foi possível contato com o candidato " + candidatos[i]
+                        + ", número máximo de tentativas atingido.");
+            }
+        }
+    }
+    static boolean atender() { 
+        return ThreadLocalRandom.current().nextInt(1, 3) == 1; // Retorna true ou false aleatoriamente
     }
 
     static void imprimirSelecionados() { // Método que imprime os candidatos selecionados
