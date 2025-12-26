@@ -1,18 +1,13 @@
-## Getting Started
+📌 **Desafio Controle de Fluxo – Trilha Java Básico**
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este é o projeto do Desafio de Controle de Fluxo da Trilha Java Básico da Digital Innovation One (DIO). O objetivo do desafio é aplicar conceitos de controle de fluxo, loopings e tratamento de exceções em Java
 
-## Folder Structure
+🧠 **Sobre o Desafio**
 
-The workspace contains two folders by default, where:
+O programa deve receber dois parâmetros inteiros via terminal e realizar uma contagem com base nesses valores. As regras são:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+* Se o primeiro parâmetro for maior que o segundo, lançar uma exceção personalizada ParametrosInvalidosException. 
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+* Se os parâmetros forem válidos, o programa deve imprimir os números de forma incremental entre eles.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Esse desafio exercita o uso de estruturas de repetição (for) e manipulação de erros no fluxo de execução.
