@@ -8,8 +8,8 @@ public class Aluno {
         return nome;
     }
 
-    public void setNome(String newNome) {
-        nome = newNome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public int getIdade() {
